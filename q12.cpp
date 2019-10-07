@@ -1,3 +1,8 @@
+/*
+Check CheckPermutation: Given two strings, write a method
+to decide if one is a permutation of the other.
+*/
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -8,7 +13,7 @@ bool CheckPermutation(string str1, string str2){
 
   sort(str1.begin(), str1.end());
   sort(str2.begin(), str2.end());
-  
+
   return str1.compare(str2) == 0;
 }
 
